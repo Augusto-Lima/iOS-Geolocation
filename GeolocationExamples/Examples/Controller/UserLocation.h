@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UserLocation.h
 //  GeolocationExamples
 //
 //  Created by Augusto Lima on 9/4/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UserLocation : UIViewController
 
++ (instancetype)newUserLocationInstance;
 
 @end
-
