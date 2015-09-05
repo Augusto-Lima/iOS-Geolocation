@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1443BEAF1B9A37270022CDD9 /* MainListExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443BEAE1B9A37270022CDD9 /* MainListExamples.m */; };
-		1443BEBA1B9A3A6A0022CDD9 /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443BEB91B9A3A6A0022CDD9 /* UserLocation.m */; };
-		1443BEBF1B9A3B660022CDD9 /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1443BEBE1B9A3B660022CDD9 /* UserLocation.storyboard */; };
 		1443BEC51B9A3D9F0022CDD9 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1443BEC41B9A3D9F0022CDD9 /* ExampleCell.m */; };
+		144F00E81B9B5C4C00F7CC0D /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 144F00E51B9B5C4C00F7CC0D /* UserLocation.m */; };
+		144F00E91B9B5C4C00F7CC0D /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */; };
+		144F00EB1B9B5C7900F7CC0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144F00EA1B9B5C7900F7CC0D /* MapKit.framework */; };
 		145C1B231B9A45A40019A6C8 /* MainListExamples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C1B221B9A45A40019A6C8 /* MainListExamples.storyboard */; };
 		145C95311B9A1FD10047783E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145C95301B9A1FD10047783E /* main.m */; };
 		145C95341B9A1FD10047783E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145C95331B9A1FD10047783E /* AppDelegate.m */; };
@@ -32,11 +33,12 @@
 /* Begin PBXFileReference section */
 		1443BEAD1B9A37270022CDD9 /* MainListExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainListExamples.h; path = Main/Controller/MainListExamples.h; sourceTree = "<group>"; };
 		1443BEAE1B9A37270022CDD9 /* MainListExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainListExamples.m; path = Main/Controller/MainListExamples.m; sourceTree = "<group>"; };
-		1443BEB81B9A3A6A0022CDD9 /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserLocation.h; path = Examples/Controller/UserLocation.h; sourceTree = "<group>"; };
-		1443BEB91B9A3A6A0022CDD9 /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserLocation.m; path = Examples/Controller/UserLocation.m; sourceTree = "<group>"; };
-		1443BEBE1B9A3B660022CDD9 /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserLocation.storyboard; path = Examples/View/UserLocation.storyboard; sourceTree = "<group>"; };
 		1443BEC31B9A3D9F0022CDD9 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExampleCell.h; path = Main/View/ExampleCell.h; sourceTree = "<group>"; };
 		1443BEC41B9A3D9F0022CDD9 /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExampleCell.m; path = Main/View/ExampleCell.m; sourceTree = "<group>"; };
+		144F00E41B9B5C4C00F7CC0D /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocation.h; sourceTree = "<group>"; };
+		144F00E51B9B5C4C00F7CC0D /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
+		144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocation.storyboard; sourceTree = "<group>"; };
+		144F00EA1B9B5C7900F7CC0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		145C1B221B9A45A40019A6C8 /* MainListExamples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainListExamples.storyboard; path = Main/View/MainListExamples.storyboard; sourceTree = "<group>"; };
 		145C952B1B9A1FD10047783E /* GeolocationExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C952F1B9A1FD10047783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144F00EB1B9B5C7900F7CC0D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +84,7 @@
 		1443BEAC1B9A36A80022CDD9 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				1443BEBB1B9A3B0A0022CDD9 /* View */,
-				1443BEB71B9A3A420022CDD9 /* Controller */,
+				144F00E21B9B5C4C00F7CC0D /* UserLocation */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -113,26 +115,37 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		1443BEB71B9A3A420022CDD9 /* Controller */ = {
+		144F00E21B9B5C4C00F7CC0D /* UserLocation */ = {
 			isa = PBXGroup;
 			children = (
-				1443BEB81B9A3A6A0022CDD9 /* UserLocation.h */,
-				1443BEB91B9A3A6A0022CDD9 /* UserLocation.m */,
+				144F00E31B9B5C4C00F7CC0D /* Controller */,
+				144F00E61B9B5C4C00F7CC0D /* View */,
 			);
-			name = Controller;
+			name = UserLocation;
+			path = Examples/UserLocation;
 			sourceTree = "<group>";
 		};
-		1443BEBB1B9A3B0A0022CDD9 /* View */ = {
+		144F00E31B9B5C4C00F7CC0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1443BEBE1B9A3B660022CDD9 /* UserLocation.storyboard */,
+				144F00E41B9B5C4C00F7CC0D /* UserLocation.h */,
+				144F00E51B9B5C4C00F7CC0D /* UserLocation.m */,
 			);
-			name = View;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		144F00E61B9B5C4C00F7CC0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		145C95221B9A1FD10047783E = {
 			isa = PBXGroup;
 			children = (
+				144F00EA1B9B5C7900F7CC0D /* MapKit.framework */,
 				145C952D1B9A1FD10047783E /* GeolocationExamples */,
 				145C95471B9A1FD10047783E /* GeolocationExamplesTests */,
 				145C952C1B9A1FD10047783E /* Products */,
@@ -269,8 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				145C953F1B9A1FD10047783E /* LaunchScreen.xib in Resources */,
-				1443BEBF1B9A3B660022CDD9 /* UserLocation.storyboard in Resources */,
 				145C1B231B9A45A40019A6C8 /* MainListExamples.storyboard in Resources */,
+				144F00E91B9B5C4C00F7CC0D /* UserLocation.storyboard in Resources */,
 				145C953C1B9A1FD10047783E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +304,7 @@
 			files = (
 				1443BEAF1B9A37270022CDD9 /* MainListExamples.m in Sources */,
 				1443BEC51B9A3D9F0022CDD9 /* ExampleCell.m in Sources */,
-				1443BEBA1B9A3A6A0022CDD9 /* UserLocation.m in Sources */,
+				144F00E81B9B5C4C00F7CC0D /* UserLocation.m in Sources */,
 				145C95341B9A1FD10047783E /* AppDelegate.m in Sources */,
 				145C95311B9A1FD10047783E /* main.m in Sources */,
 			);

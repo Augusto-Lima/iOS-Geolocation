@@ -15,8 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="gyb-cV-5Ge">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vF8-m4-7YK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vF8-m4-7YK" firstAttribute="height" secondItem="gyb-cV-5Ge" secondAttribute="height" id="S3i-TT-Emg"/>
+                            <constraint firstItem="vF8-m4-7YK" firstAttribute="width" secondItem="gyb-cV-5Ge" secondAttribute="width" id="i67-RE-gnv"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="vF8-m4-7YK" id="kL9-Xa-Jns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQX-HQ-Vjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface UserLocation : UIViewController
+@interface UserLocation : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
 + (instancetype)newUserLocationInstance;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
